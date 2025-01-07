@@ -1,6 +1,6 @@
-const id_url = "2PACX-1vQmLz6-lnHC_-9RB6L2GEWDsmD0eTwGw9jCmrwlyLLfzLPC7SJA9vy8AngEZRmuIOShLZJ4moNvLi5c";
+import credenciais from './credenciais.js';
 
-const url = `https://docs.google.com/spreadsheets/d/e/${id_url}/pub?output=csv`;
+const url = `https://docs.google.com/spreadsheets/d/e/${credenciais.id_url_carros}/pub?output=csv`;
 
 // Elementos do DOM
 const montadoraSelect = document.getElementById('montadora');
@@ -33,7 +33,7 @@ function processCSVData(csvText) {
   data = rows.slice(1).map(row => {
     const values = row.split(',');
     return {
-      montadora: values[2],
+      montadora: values[3],
       modelo: values[4],
       ano: values[5],
     };

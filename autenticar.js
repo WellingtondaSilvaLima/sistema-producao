@@ -1,3 +1,5 @@
+import credenciais from './credenciais.js';
+
 const loginForm = document.getElementById('login');
 
 loginForm.addEventListener('submit', (event) => {
@@ -6,7 +8,7 @@ loginForm.addEventListener('submit', (event) => {
   const username = document.getElementById('username').value;
   const password = document.getElementById('password').value;
 
-  if (username === 'simplo' && password === 'Qazujm@1092') {
+  if (username === credenciais.user && password === credenciais.senha) {
     sessionStorage.setItem('isAuthenticated', 'true');
     window.location.href = 'home.html';
   } else {

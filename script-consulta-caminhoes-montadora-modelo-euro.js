@@ -1,6 +1,6 @@
-const id_url = "2PACX-1vTxZyI3zy_LQwWWTJMlOi97uREqmh2VCPM1DWb3sdxmeKBuL1sUzGP5QkgYx6uTUg5-Ik4EPtT6ieaj";
+import credenciais from './credenciais.js';
 
-const url = `https://docs.google.com/spreadsheets/d/e/${id_url}/pub?output=csv`;
+const url = `https://docs.google.com/spreadsheets/d/e/${credenciais.id_url_caminhoes}/pub?output=csv`;
 
 // Elementos do DOM
 const montadoraSelect = document.getElementById('montadora');
