@@ -1,0 +1,180 @@
+body {
+  background-color: #E8EAED;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  width: 95vw;
+  height: 90vh;
+}
+
+#header-index {
+  height: 25vh;
+}
+
+/* Index */
+#menu-principal {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+}
+
+.voltar {
+  position: absolute;
+  margin-top: 20px !important;
+}
+
+#menu-principal li {
+  margin: 20px 15px;
+}
+
+#menu-principal a:link,
+#menu-principal a:visited {
+  text-decoration: none;
+  background-color: #2A2118;
+  color: #fff;
+  font-size: 12px;
+  padding: 15px;
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+#menu-principal a:active,
+#menu-principal a:hover {
+  background-color: #515A55;
+  color: #fff;
+  transition: all 0.8s;
+}
+
+footer {
+  position: relative;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  margin-top: 50px;
+  height: 70vh;
+}
+
+#footer-index {
+  position: relative;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  margin-top: 50px;
+  height: 60vh;
+}
+
+img {
+  width: 150px;
+}
+
+
+/* Consulta Carros */
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#montadora-modelo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.consulta-montadora-modelo {
+  font-size: 16px;
+  text-transform: uppercase;
+  background-color: #1155CC;
+  color: #fff;
+  padding: 0 20px;
+  margin: 35px 0 15px 0;
+  font-weight: 700;
+}
+
+.menu-select {
+  border: 0;
+  background-color: #fff;
+  padding: 8px 15px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+#modelo,
+#modelos-ano {
+  display: none;
+}
+
+#modelos-ano {
+  margin-top: 20px;
+}
+
+#titulo-resultado {
+  display: none;
+}
+
+.anos {
+  display: flex;
+  align-items: start;
+}
+
+.lado-modelos {
+  margin-right: 30px;
+}
+
+.lado-anos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 30px;
+  
+}
+
+#mostra-resultado-modelos-ano {
+  margin-top: 10px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  display: none;
+}
+
+
+#mostra-resultado {
+  margin-top: 28px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  display: none;
+}
+
+/* Responsividade */
+@media (max-width: 650px) {
+  #menu-principal a:link,
+  #menu-principal a:visited {
+    font-size: 10px;
+    padding: 10px;
+    font-weight: 700;
+    border-radius: 10px;
+  }
+
+  #menu-principal li {
+    margin: 15px;
+  }
+
+  .consulta-montadora-modelo {
+    margin: 75px 0 15px 0;
+  }
+}
+
+@media (max-width: 360px) {
+  #menu-principal a:link,
+  #menu-principal a:visited {
+    font-size: 8px;
+    padding: 10px;
+    font-weight: 700;
+    border-radius: 10px;
+  }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Consulta Motos</title>
+
+  <link rel="icon" href="imagens/logo.svg" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul id="menu-principal" class="voltar">
+        <li><a href="index.html">Voltar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="montadora-modelo">
+      <div class="consulta-montadora-modelo">
+        <p>Consulta por Montadora/Ano</p>
+      </div>
+
+      <div class="montadora">
+        <select name="montadora" id="montadora" class="menu-select">
+          <option value="">Selecione a montadora</option>
+        </select>
+      </div>
+
+      <div class="modelo">
+        <select name="modelo" id="modelo" class="menu-select">
+          <option value="">Selecione o ano</option>
+        </select>
+      </div>
+
+      <div class="ano anos">
+        <div class="lado-modelos">
+          <h3 id="titulo-resultado">Modelos por ano</h3>
+          <div id="mostra-resultado"></div>
+        </div>
+        <div class="lado-anos">
+          <select name="modelos-ano" id="modelos-ano" class="menu-select">
+            <option value="">Selecione o modelo</option>
+          </select>
+          <div id="mostra-resultado-modelos-ano"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a href="https://www.simploonline2.com/"><img src="imagens/logo.svg" alt="Logo da Simplo"></a>
+  </footer>
+
+  <script src="script-consulta-motos-montadora-ano.js"></script>
+</body>
+</html>
