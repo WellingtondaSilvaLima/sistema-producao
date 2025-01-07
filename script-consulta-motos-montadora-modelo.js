@@ -31,7 +31,7 @@ function processCSVData(csvText) {
     return {
       montadora: values[2],
       modelo: values[4],
-      ano: values[3],
+      ano: values[7],
     };
   });
 

@@ -33,9 +33,10 @@ function processCSVData(csvText) {
   data = rows.slice(1).map(row => {
     const values = row.split(',');
     return {
-      montadora: values[2],
+      montadora: values[0],
       modelo: values[3],
       ano: values[5],
+      anoModelo: values[4]
     };
   });
 
@@ -130,7 +131,7 @@ function pegaAno() {
     ...new Set(
       data
         .filter(item => item.ano === modelo)
-        .map(item => item.modelo)
+        .map(item => item.anoModelo)
     )
   ];
 

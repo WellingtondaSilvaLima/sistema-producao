@@ -29,9 +29,9 @@ function processCSVData(csvText) {
   data = rows.slice(1).map(row => {
     const values = row.split(',');
     return {
-      montadora: values[2],
-      modelo: values[4],
-      ano: values[3],
+      montadora: values[3],
+      modelo: values[5],
+      ano: values[4],
     };
   });
 

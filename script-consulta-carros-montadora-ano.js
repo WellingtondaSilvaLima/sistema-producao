@@ -34,8 +34,8 @@ function processCSVData(csvText) {
     const values = row.split(',');
     return {
       montadora: values[2],
-      modelo: values[3],
-      ano: values[4],
+      modelo: values[4],
+      ano: values[5],
     };
   });
 

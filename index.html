@@ -3,33 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="autenticar.css">
 
   <title>Simplo - Produção</title>
 
   <link rel="icon" href="imagens/logo.svg" type="image/x-icon">
 </head>
 <body>
-  <header id="header-index">
-    <nav>
-      <ul id="menu-principal">
-        <li><a href="consulta-carros-montadora-modelo.html">Carros por Montadora/Modelo</a></li>
-        <li><a href="consulta-carros-montadora-ano.html">Carros por Montadora/Ano</a></li>
-        <li><a href="consulta-caminhoes-montadora-modelo.html">Caminhões por Montadora/Modelo</a></li>
-        <li><a href="consulta-caminhoes-montadora-ano.html">Caminhões por Montadora/Ano</a></li>
-        <li><a href="consulta-caminhoes-montadora-modelo-euro.html">Caminhões por Euro</a></li>
-        <li><a href="consulta-motos-montadora-modelo.html">Motos por Montadora/Modelo</a></li>
-        <li><a href="consulta-motos-montadora-ano.html">Motos por Montadora/Ano</a></li>
-        <li><a href="consulta-hib-ele-montadora-modelo.html">Híbridos/Elétricos por Montadora/Modelo</a></li>
-        <li><a href="consulta-hib-ele-montadora-ano.html">Híbridos/Elétricos por Montadora/Ano</a></li>
-      </ul>
-    </nav>
-  </header>
+  <main>
+    <form id="login">
+      <label for="user">Usuário</label>
+      <input type="text" name="user" id="username" placeholder="Adicione o usuário" required>
+      <label for="senha">Senha</label>
+      <input type="password" name="senha" id="password" placeholder="Adicione a senha" required>
+      <button type="submit">Entrar</button>
+    </form>
+  </main>
 
   <footer id="footer-index">
     <a href="https://www.simploonline2.com/"><img src="imagens/logo.svg" alt="Logo da Simplo"></a>
   </footer>
 
-  <script src="scrip.js"></script>
+  <script src="autenticar.js"></script>
 </body>
 </html>

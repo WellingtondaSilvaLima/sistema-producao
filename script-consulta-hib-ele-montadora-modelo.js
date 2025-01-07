@@ -30,7 +30,7 @@ function processCSVData(csvText) {
     const values = row.split(',');
     return {
       montadora: values[3],
-      modelo: values[2],
+      modelo: values[0],
       ano: values[5],
     };
   });
@@ -54,7 +54,7 @@ function populateMontadoras() {
 // Atualizar o select de modelos baseado na montadora
 function handleMontadoraChange() {
   const montadora = montadoraSelect.value;
-  modeloSelect.innerHTML = '<option value="">Selecione o modelo</option>';
+  modeloSelect.innerHTML = '<option value="">Selecione entre Híbridos ou Elétricos</option>';
   resultado.style.display = "none";
   resultado.textContent = '';
 
